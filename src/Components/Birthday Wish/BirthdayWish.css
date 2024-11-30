@@ -1,0 +1,140 @@
+/* General Styling */
+.birthday-wish {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Cool blue gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Universal text color */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Section Styling */
+.welcome-section,
+.photo-collage-section,
+.stars-section,
+.fireworks-section {
+    text-align: center;
+}
+
+/* Welcome Section */
+.welcome-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffd700; /* Golden text for elegance */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.welcome-message {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    color: #fffbf1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.gift-box {
+    font-size: 4rem;
+    cursor: pointer;
+    animation: float 2s ease-in-out infinite;
+    color: #ff69b4; /* Vibrant pink for fun */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Photo Collage Section */
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.memory-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.memory-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Stars Section */
+.stars-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.star {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #ffd700; /* Golden star */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Fireworks Section */
+.fireworks {
+    font-size: 3rem;
+    animation: fireworks 2s ease-in-out infinite;
+    color: #ff4500; /* Fiery orange for excitement */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fireworks {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        color: #ff6347; /* Flash of vibrant red */
+    }
+}
+
+/* Button Styling */
+.next-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Bright pink gradient */
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.next-button:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3); /* Reverse gradient */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
